@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 /*
  Run using MAMP (OSX) or XAMPP (Win)
- eg http://localhost:8888/phaser-first-project/
+ eg http://localhost:8888/phaser-game1/
  */
 
 var run = function () {
-  var game = new Phaser.Game(480, 320, Phaser.AUTO, null, {preload: preload, create: create, update: update});
+  var game = new Phaser.Game(800, 600, Phaser.AUTO, null, {preload: preload, create: create, update: update});
   var ball1, ball2, paddle1, paddle2;
   var bricks, newBrick, brickInfo;
   var lives = 3;
@@ -143,7 +143,7 @@ var run = function () {
     brickInfo = {
       width: 50,
       height: 20,
-      count: {row: 7, col: 3},
+      count: {row: 12, col: 9},
       offset: {top: 50, left: 60},
       padding: 10
     };
